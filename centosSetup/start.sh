@@ -8,6 +8,8 @@ sudo yum install -y ncurses-devel
 sudo yum install -y make
 sudo yum install -y gcc
 sudo yum install -y openssl-devel readline-devel zlib-devel
+sudo yum install -y postgresql-devel
+sudo yum install -y nginx
 
 # vim install
 cd /usr/local/src
@@ -17,3 +19,10 @@ sudo hg pull
 sudo ./configure --with-features=huge --enable-multibyte --disable-selinux
 sudo make
 sudo make install
+
+# postgresql install
+sudo yum install -y https://yum.postgresql.org/9.6/redhat/rhel-7-x86_64/pgdg-redhat96-9.6-3.noarch.rpm
+sudo yum install -y postgresql96-server postgresql96-contrib
+sudo /usr/pgsql-9.6/bin/postgresql96-setup initdb
+sudo systemctl start postgresql-9.6.service
+suod systemctl enable postgresql-9.6.service
