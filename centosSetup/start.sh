@@ -1,12 +1,13 @@
 #!/bin/bash
 
 sudo yum update
-sudo yum install zsh
-sudo yum install tmux
-sudo yum install mercurial
-sudo yum install ncurses-devel
-sudo yum install make
-sudo yum install gcc
+sudo yum install -y zsh
+sudo yum install -y tmux
+sudo yum install -y mercurial
+sudo yum install -y ncurses-devel
+sudo yum install -y make
+sudo yum install -y gcc
+sudo yum install -y openssl-devel readline-devel zlib-devel
 
 # vim install
 cd /usr/local/src
