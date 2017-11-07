@@ -10,6 +10,8 @@ sudo yum install -y gcc
 sudo yum install -y openssl-devel readline-devel zlib-devel
 sudo yum install -y postgresql-devel
 sudo yum install -y nginx
+sudo yum install -y epel-release
+sudo yum install -y nodejs
 
 # vim install
 cd /usr/local/src
