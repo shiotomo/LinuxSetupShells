@@ -21,6 +21,7 @@ sudo apt-get -y install make
 sudo apt-get -y install curl
 sudo apt-get -y install postgresql
 sudo apt-get -y install libpq-dev
+sudo apt-get -y install nginx
 
 # vim install
 sudo apt-cache -i depends vim
