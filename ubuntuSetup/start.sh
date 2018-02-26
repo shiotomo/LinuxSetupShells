@@ -6,7 +6,6 @@ sudo apt-get -y upgrade
 # install
 # sudo apt-get install software-properties-common
 # sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get -y update
 # sudo apt-get -y install neovim
 # sudo apt-get -y install vim
 sudo apt-get -y install tmux
