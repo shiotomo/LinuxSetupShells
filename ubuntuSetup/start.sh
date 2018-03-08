@@ -22,6 +22,9 @@ sudo apt-get -y install postgresql
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install nginx
 
+# heroku
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
 # vim install
 sudo apt-cache -i depends vim
 sudo apt-get remove --purge vim vim-runtime vim-common
